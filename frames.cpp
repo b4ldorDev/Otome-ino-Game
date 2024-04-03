@@ -1,3 +1,19 @@
+#include <Arduino.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h> 
+#include <Adafruit_SSD1306.h> 
+
+#define ANCHO_PANTALLA 128 
+#define ALTO_PANTALLA 64 
+
+#define OLED_RESET -1
+#define DIRECCION_PANTALLA 0x3C
+
+Adafruit_SSD1306 display(ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, OLED_RESET); 
+
+#define F_WIDTH 128
+#define F_HEIGHT 64
+
 // 'mafu_cm', 128x64px
 const unsigned char epd_bitmap_mafu_cm [] PROGMEM = {
   0x00, 0x00, 0x1e, 0xff, 0xff, 0xff, 0xff, 0xfb, 0xff, 0xff, 0xff, 0xf9, 0xf0, 0x00, 0x00, 0x00, 
@@ -1431,3 +1447,118 @@ const unsigned char* epd_bitmap_allArray[21] = {
   epd_bitmap_urata_hidden,
   epd_bitmap_urata_om
 };
+
+void mafu_cm(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, mafu_cm, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+
+void mafu_om(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, mafu_om, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+
+void mafu_gend(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, mafu_gend, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+
+void mafu_happy(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, mafu_happy, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void mafu_surprise(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, mafu_surprise, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+
+void saka_Gend(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, saka_Gend, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void saka_angry(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, saka_angry, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void saka_om(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, saka_om, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void saka_cm(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, saka_cm, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void saka_surprise(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, saka_surprise, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void saka_s(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, saka_s, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void sora_am(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, sora_am, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void sora_cm(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, sora_cm, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void sora_om(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, sora_om, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void sora_meh(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, sora_meh, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void sora_Gend(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, sora_Gend, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void urata_Gend(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, urata_Gend, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void urata_cm(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, urata_cm, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void urata_om(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, urata_om, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void urata_cm(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, urata_cm, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void urata_hidden(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, urata_hidden, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}
+void urata_angry(){
+  display.clearDisplay(); 
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, urata_angry, F_WIDTH, F_HEIGHT, WHITE);
+  display.display(); 
+}

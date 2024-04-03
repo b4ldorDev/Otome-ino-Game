@@ -1,11 +1,11 @@
-#include 
+#include "bth.h"
+#include "otome_game.h" 
 
-void setup() {
-  // put your setup code here, to run once:
-  setup_game();
+void setup(){
+  Serial.begin(9600);  
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
 
+void loop(){
+  
 }
