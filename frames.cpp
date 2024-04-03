@@ -1422,7 +1422,7 @@ const unsigned char epd_bitmap_urata_om [] PROGMEM = {
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x20, 0x1f, 0xcf, 0x80, 0xd8, 0x00, 0x00, 0x00, 0x00, 0x00
 };
 
-// Array of all bitmaps for convenience. (Total bytes used to store images in PROGMEM = 21840)
+/*Array of all bitmaps for convenience. (Total bytes used to store images in PROGMEM = 21840)
 const int epd_bitmap_allArray_LEN = 21;
 const unsigned char* epd_bitmap_allArray[21] = {
   epd_bitmap_mafu_cm,
@@ -1446,119 +1446,114 @@ const unsigned char* epd_bitmap_allArray[21] = {
   epd_bitmap_urata_cm,
   epd_bitmap_urata_hidden,
   epd_bitmap_urata_om
-};
+};*/
 
 void mafu_cm(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, mafu_cm, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_mafu_cm, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 
 void mafu_om(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, mafu_om, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_mafu_om, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 
 void mafu_gend(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, mafu_gend, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_mafu_gend, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 
 void mafu_happy(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, mafu_happy, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_mafu_happy, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void mafu_surprise(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, mafu_surprise, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_mafu_surprise, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 
 void saka_Gend(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, saka_Gend, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_saka_Gend, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void saka_angry(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, saka_angry, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_saka_angry, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void saka_om(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, saka_om, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_saka_om, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void saka_cm(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, saka_cm, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_saka_cm, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void saka_surprise(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, saka_surprise, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_saka_surprise, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void saka_s(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, saka_s, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_saka_s, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void sora_am(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, sora_am, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_sora_am, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void sora_cm(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, sora_cm, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_sora_cm, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void sora_om(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, sora_om, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_sora_om, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void sora_meh(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, sora_meh, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_sora_meh, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void sora_Gend(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, sora_Gend, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_soraru_Gend, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void urata_Gend(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, urata_Gend, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_urata_Gend, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void urata_cm(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, urata_cm, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_urata_cm, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void urata_om(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, urata_om, F_WIDTH, F_HEIGHT, WHITE);
-  display.display(); 
-}
-void urata_cm(){
-  display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, urata_cm, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_urata_om, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void urata_hidden(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, urata_hidden, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_urata_hidden, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }
 void urata_angry(){
   display.clearDisplay(); 
-  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, urata_angry, F_WIDTH, F_HEIGHT, WHITE);
+  display.drawBitmap((display.width() - F_WIDTH)  / 1,((display.height()- F_HEIGHT) / 1)+7, epd_bitmap_urata_angry, F_WIDTH, F_HEIGHT, WHITE);
   display.display(); 
 }

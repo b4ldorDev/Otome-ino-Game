@@ -1,26 +1,21 @@
 #include <SoftwareSerial.h> 
 #include <Arduino.h>
-SoftwareSerial miBT();
-char c = 0;
-String nameu = "";
-void setup(){
-  mybt.begin(9600); 
-}
+SoftwareSerial mybt(0,1);
 
 void read_character(){
   if (mybt.available()){
-   c = mybt.read(); 
+   char c = mybt.read(); 
    }
    return c;   
 }
 
 void read_name(){
    if (mybt.available());{
-   nameu = mibt.read();
+   String nameu = mybt.read();
    } 
    return nameu;
 }
 
-void show_text(t){
+void show_text(String t){
   mybt.println(t);
 }

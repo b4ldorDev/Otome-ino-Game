@@ -1,1 +1,17 @@
+void intro(); 
 void setup_game();
+void situtation1(String n);
+void situtation2(String n);
+void situtation3(String n);
+void mfmf_route(String n);
+void srr_route(String n);
+void urtnk_route(String n);
+void skt_route(String n);
+void mfmf_gEnd();
+void mfmf_bEnd();
+void srr_gEnd();
+void srr_bEnd();
+void urtk_gEnd();
+void urtk_bEnd();
+void skt_gEnd();
+void skt_bEnd(); 
