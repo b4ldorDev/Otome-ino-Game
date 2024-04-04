@@ -1,17 +1,18 @@
-#include "otome_game.h" 
+#include "otome_game.h"
+#include <SoftwareSerial.h> 
+#include "bth.h" 
+#include "frames.h" 
 int mfmf = 0;
 int srr = 0;
 int urtnk = 0 ; 
 int skt = 0; 
-String  username ="";
 void setup(){
   Serial.begin(9600);  
 }
-
-
 void loop(){
- String username = intro();
- int option1 = situtation1(username);
+ String username; 
+ username = intro();
+ int option1 = situation1(username);
  switch (option1){
    case 1:
      mfmf +=1;
@@ -26,7 +27,7 @@ void loop(){
      skt +=1;
      break; 
  }
- int option2 = situtation2(username);
+ int option2 = situation2(username);
  switch (option2){
   case 1:
     mfmf +=1;
@@ -41,7 +42,7 @@ void loop(){
     skt +=1;
     break;        
  }
- int option3 =  situtation3(username);
+ int option3 = situation3(username);
  switch (option3){
   case 1:
     mfmf +=1;

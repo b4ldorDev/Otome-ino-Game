@@ -1,6 +1,6 @@
 #include <SoftwareSerial.h> 
 #include <Arduino.h>
-SoftwareSerial mybt(0,1);
+SoftwareSerial mybt(0,1);  
 
 int read_character(){
   int c =0;
@@ -19,5 +19,5 @@ String  read_name(){
 }
 
 void show_text(String  t){
-  mybt.println(t);
+   mybt.println(t);
 }

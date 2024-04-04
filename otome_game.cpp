@@ -13,7 +13,7 @@ String intro(){
 
 }
 
-char situation1(String  n){
+int situation1(String n){
   show_text("Hola de nuevo " );
   show_text(n);
   show_text("Contexto");
@@ -21,14 +21,13 @@ char situation1(String  n){
   show_text("dialogo mf");
   show_text("dialogo srr");
   show_text("Pregunta"); 
-  show_text(" A, B, C, D");
-  char option = read_character();
+  show_text(" 1, 2, 3, 4");
+  int option = read_character();
   show_text("Elegiste" + option);
   return option;
   
 }   
-
-char situation2(String  n){
+int situation2(String n){
   show_text("Hola de nuevo");
   show_text(n);
   show_text("Contexto");
@@ -38,13 +37,13 @@ char situation2(String  n){
   show_text("dialogo mf");
   show_text("dialogo srr");  
   show_text("Pregunta"); 
-  show_text(" A, B, C, D");
-  char option = read_character();
+  show_text(" 1, 2, 3, 4");
+  int option = read_character();
   show_text("Elegiste" + option);
   return option;    
 }
 
-char situation3(String  n){
+int situation3(String n){
   show_text("Hola de nuevo ");
   show_text(n);
   show_text("Contexto");
@@ -58,8 +57,8 @@ char situation3(String  n){
   show_text("dialogo mf");
   show_text("dialogo srr");   
   show_text("Pregunta"); 
-  show_text(" A, B, C, D");
-  char option = read_character();
+  show_text(" 1, 2, 3, 4");
+  int option = read_character();
   show_text("Elegiste" + option);    
 }
 
@@ -67,7 +66,7 @@ void common_ending(String n){
 
 }
 
-char mfmf_route(String n){
+int mfmf_route(String n){
   show_text("MF- Hola ");
   show_text(n);
   show_text("Contexto");
@@ -78,22 +77,21 @@ char mfmf_route(String n){
   show_text("dialogo srr");  
   show_text("Pregunta"); 
   show_text(" A, B");
-  char option = read_character();
+  int option = read_character();
 
   return option;    
 
 }
 
-char srr_route(String  n){
+int srr_route(String  n){
 
 }
 
-char urtnk_route(String  n){
+int urtnk_route(String  n){
 
 }
 
-char skt_route(String  n){
-
+int skt_route(String  n){
 }
 
 void mfmf_gEnd(String  n){
