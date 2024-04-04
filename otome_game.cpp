@@ -63,11 +63,11 @@ char situation3(String  n){
   show_text("Elegiste" + option);    
 }
 
-char common_ending(){
+void common_ending(String n){
 
 }
 
-char mfmf_route(String  n){
+char mfmf_route(String n){
   show_text("MF- Hola ");
   show_text(n);
   show_text("Contexto");
@@ -84,44 +84,44 @@ char mfmf_route(String  n){
 
 }
 
-char srr_route(){
+char srr_route(String  n){
 
 }
 
-char urtnk_route(){
+char urtnk_route(String  n){
 
 }
 
-char skt_route(){
+char skt_route(String  n){
 
 }
 
-char mfmf_gEnd(){
+void mfmf_gEnd(String  n){
 
 }
 
-char srr_gEnd(){
+void srr_gEnd(String  n){
 
 }
 
-char urtnk_gEnd(){
+void urtnk_gEnd(String  n){
 
 }
 
-char skt_gEnd(){
+void skt_gEnd(String  n){
 }
 
-char mfmf_bEnd(){
-
-}
-
-char srr_bEnd(){
+void mfmf_bEnd(String  n){
 
 }
 
-char urtnk_bEnd(){
+void srr_bEnd(String  n){
 
 }
 
-char skt_bEnd(){
+void urtnk_bEnd(String  n){
+
+}
+
+void skt_bEnd(String  n){
 }

@@ -2,9 +2,10 @@
 #include <Arduino.h>
 SoftwareSerial mybt(0,1);
 
-char read_character(){
+int readcharacter(){
+  int c =0;
   if (mybt.available()){ 
-    char c = mybt.read(); 
+    c = mybt.read(); 
   }
   return c;   
 }

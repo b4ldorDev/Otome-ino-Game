@@ -58,42 +58,42 @@ void loop(){
  }
  
  if(mfmf >= 2){
-  int option = mfmf_route(String  username);
+  int option = mfmf_route(username);
   if (option == 1){
-    mfmf_gEnd(String  username);
+    mfmf_gEnd(username);
     }
   else{
-    mfmf_bEnd(String  username); 
+    mfmf_bEnd(username); 
     }
   }
  if(srr >= 2){
-  int option = srr_route(String  username);
+  int option = srr_route(username);
   if (option == 1){
-    srr_gEnd(String  username);
+    srr_gEnd(username);
     }
   else{
-    srr_bEnd(String  username);
+    srr_bEnd(username);
     }
   }
  if(urtnk >=2){
-  int option = urtnk_route(String username);
+  int option = urtnk_route(username);
   if (option== 1){
-    urtnk_gEnd(String  username);
+    urtnk_gEnd(username);
     }
   else {
-    urtnk_bEnd(String  username);
+    urtnk_bEnd(username);
     }  
   }
  if(skt >=2){
-  int option = skt_route(String  username); 
+  int option = skt_route(username); 
   if (option==1){
-    skt_gEnd(String  username); 
+    skt_gEnd(username); 
   }
   else{
-    skt_bEnd(String username);
+    skt_bEnd(username);
     }
   }
  else{
-  common_ending(String  username);
+  common_ending(username);
   }
 }
