@@ -2,33 +2,35 @@
 #include "bth.h" 
 #include "frames.h"
 
-void intro(){
+String intro(){
   show_text("dialogos de introducción1");
   show_text("dialogos de introducción2");
   show_text("Ingresa tu nombre!!");
-  String user = read_name();
-  String = text("Bienvenid@ ");
-  show_test( text + user); 
+  String  user = read_name();
+  String  text("Bienvenid@ ");
+  show_text(user);
   return user ;
 
 }
 
-void situation1(String n){
-  show_text("Hola de nuevo " + n);
+char situation1(String  n){
+  show_text("Hola de nuevo " );
+  show_text(n);
   show_text("Contexto");
   show_text("Problematica");
   show_text("dialogo mf");
   show_text("dialogo srr");
   show_text("Pregunta"); 
   show_text(" A, B, C, D");
-  option = read_character();
+  char option = read_character();
   show_text("Elegiste" + option);
   return option;
   
 }   
 
-void situation2(String n){
-  show_text("Hola de nuevo", n);
+char situation2(String  n){
+  show_text("Hola de nuevo");
+  show_text(n);
   show_text("Contexto");
   show_text("Problematica");
   show_text("dialogo urtnk");
@@ -37,13 +39,14 @@ void situation2(String n){
   show_text("dialogo srr");  
   show_text("Pregunta"); 
   show_text(" A, B, C, D");
-  option = read_character();
+  char option = read_character();
   show_text("Elegiste" + option);
   return option;    
 }
 
-void situation3(String n){
-  show_text("Hola de nuevo", n);
+char situation3(String  n){
+  show_text("Hola de nuevo ");
+  show_text(n);
   show_text("Contexto");
   show_text("Problematica");
   show_text("dialogo urtnk");
@@ -56,16 +59,17 @@ void situation3(String n){
   show_text("dialogo srr");   
   show_text("Pregunta"); 
   show_text(" A, B, C, D");
-  option = read_character();
+  char option = read_character();
   show_text("Elegiste" + option);    
 }
 
-void common_ending(){
+char common_ending(){
 
 }
 
-void mfmf_route(String n){
-  show_text("MF- Hola", n);
+char mfmf_route(String  n){
+  show_text("MF- Hola ");
+  show_text(n);
   show_text("Contexto");
   show_text("Problematica");
   show_text("dialogo urtnk");
@@ -74,50 +78,50 @@ void mfmf_route(String n){
   show_text("dialogo srr");  
   show_text("Pregunta"); 
   show_text(" A, B");
-  option = read_character();
-  show_text("Elegiste" + option);
+  char option = read_character();
+
   return option;    
 
 }
 
-void srr_route(){
+char srr_route(){
 
 }
 
-void urtnk_route(){
+char urtnk_route(){
 
 }
 
-void skt_route(){
+char skt_route(){
 
 }
 
-void mfmf_gEnd(){
+char mfmf_gEnd(){
 
 }
 
-void srr_gEnd(){
+char srr_gEnd(){
 
 }
 
-void urtnk_gEnd(){
+char urtnk_gEnd(){
 
 }
 
-void skt_gEnd(){
+char skt_gEnd(){
 }
 
-void mfmf_bEnd(){
-
-}
-
-void srr_bEnd(){
+char mfmf_bEnd(){
 
 }
 
-void urtnk_bEnd(){
+char srr_bEnd(){
 
 }
 
-void skt_bEnd(){
+char urtnk_bEnd(){
+
+}
+
+char skt_bEnd(){
 }

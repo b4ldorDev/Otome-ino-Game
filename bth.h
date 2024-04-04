@@ -1,3 +1,3 @@
-void read_character();
-void read_name();
-void show_text(String t); 
+char read_character();
+String read_name();
+void show_text(String  t); 
