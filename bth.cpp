@@ -2,7 +2,7 @@
 #include <Arduino.h>
 SoftwareSerial mybt(0,1);
 
-int readcharacter(){
+int read_character(){
   int c =0;
   if (mybt.available()){ 
     c = mybt.read(); 
@@ -11,8 +11,9 @@ int readcharacter(){
 }
 
 String  read_name(){
-  if (mybt.available());{
-    String nameu = mybt.read();
+  String nameu;
+  if (mybt.available()){
+    nameu = mybt.readString();
   } 
   return nameu;
 }
