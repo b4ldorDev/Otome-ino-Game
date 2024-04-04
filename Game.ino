@@ -1,15 +1,14 @@
 #include "otome_game.h"
-#include <SoftwareSerial.h> 
-#include "bth.h" 
-#include "frames.h" 
+
 int mfmf = 0;
 int srr = 0;
 int urtnk = 0 ; 
 int skt = 0; 
 void setup(){
   Serial.begin(9600);  
+  
 }
-void loop(){
+void main_game(){
  String username; 
  username = intro();
  int option1 = situation1(username);
@@ -97,4 +96,8 @@ void loop(){
  else{
   common_ending(username);
   }
+}
+
+void loop(){
+  main_game();
 }
