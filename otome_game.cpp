@@ -4,62 +4,62 @@
 
 String intro(){
   Serial.println("dialogos de introducción1");
-  show_text("dialogos de introducción2");
-  show_text("Ingresa tu nombre!!");
+  Serial.println("dialogos de introducción2");
+  Serial.println("Ingresa tu nombre!!");
   String  user = read_name();
   String  text("Bienvenid@ ");
-  show_text(user);
+  Serial.println(user);
   return user ;
 
 }
 
 int situation1(String n){
-  show_text("Hola de nuevo " );
-  show_text(n);
-  show_text("Contexto");
-  show_text("Problematica");
-  show_text("dialogo mf");
-  show_text("dialogo srr");
-  show_text("Pregunta"); 
-  show_text(" 1, 2, 3, 4");
+  Serial.println("Hola de nuevo " );
+  Serial.println(n);
+  Serial.println("Contexto");
+  Serial.println("Problematica");
+  Serial.println("dialogo mf");
+  Serial.println("dialogo srr");
+  Serial.println("Pregunta"); 
+  Serial.println(" 1, 2, 3, 4");
   int option = read_character();
-  show_text("Elegiste" + option);
+  Serial.println("Elegiste" + option);
   return option;
   
 }   
 int situation2(String n){
-  show_text("Hola de nuevo");
-  show_text(n);
-  show_text("Contexto");
-  show_text("Problematica");
-  show_text("dialogo urtnk");
-  show_text("dialogo skt");
-  show_text("dialogo mf");
-  show_text("dialogo srr");  
-  show_text("Pregunta"); 
-  show_text(" 1, 2, 3, 4");
+  Serial.println("Hola de nuevo");
+  Serial.println(n);
+  Serial.println("Contexto");
+  Serial.println("Problematica");
+  Serial.println("dialogo urtnk");
+  Serial.println("dialogo skt");
+  Serial.println("dialogo mf");
+  Serial.println("dialogo srr");  
+  Serial.println("Pregunta"); 
+  Serial.println(" 1, 2, 3, 4");
   int option = read_character();
-  show_text("Elegiste" + option);
+  Serial.println("Elegiste" + option);
   return option;    
 }
 
 int situation3(String n){
-  show_text("Hola de nuevo ");
-  show_text(n);
-  show_text("Contexto");
-  show_text("Problematica");
-  show_text("dialogo urtnk");
-  show_text("dialogo skt");
-  show_text("dialogo urtnk");
-  show_text("dialogo skt");
-  show_text("dialogo urtnk");
-  show_text("dialogo skt");
-  show_text("dialogo mf");
-  show_text("dialogo srr");   
-  show_text("Pregunta"); 
-  show_text(" 1, 2, 3, 4");
+  Serial.println("Hola de nuevo ");
+  Serial.println(n);
+  Serial.println("Contexto");
+  Serial.println("Problematica");
+  Serial.println("dialogo urtnk");
+  Serial.println("dialogo skt");
+  Serial.println("dialogo urtnk");
+  Serial.println("dialogo skt");
+  Serial.println("dialogo urtnk");
+  Serial.println("dialogo skt");
+  Serial.println("dialogo mf");
+  Serial.println("dialogo srr");   
+  Serial.println("Pregunta"); 
+  Serial.println(" 1, 2, 3, 4");
   int option = read_character();
-  show_text("Elegiste" + option);    
+  Serial.println("Elegiste" + option);    
 }
 
 void common_ending(String n){
@@ -67,93 +67,93 @@ void common_ending(String n){
 }
 
 int mfmf_route(String n){
-  show_text("MF- Hola ");
-  show_text(n);
-  show_text("Contexto");
-  show_text("Problematica");
-  show_text("dialogo urtnk");
-  show_text("dialogo skt");
-  show_text("dialogo mf");
-  show_text("dialogo srr");  
-  show_text("Pregunta"); 
-  show_text(" A, B");
+  Serial.println("MF- Hola ");
+  Serial.println(n);
+  Serial.println("Contexto");
+  Serial.println("Problematica");
+  Serial.println("dialogo urtnk");
+  Serial.println("dialogo skt");
+  Serial.println("dialogo mf");
+  Serial.println("dialogo srr");  
+  Serial.println("Pregunta"); 
+  Serial.println(" A, B");
   int option = read_character();
   return option;    
 }
 
 int srr_route(String  n){
-  show_text("Sr- Hola ");
-  show_text(n);
-  show_text("Contexto");
-  show_text("Problematica");
-  show_text("dialogo urtnk");
-  show_text("dialogo skt");
-  show_text("dialogo mf");
-  show_text("dialogo srr");  
-  show_text("Pregunta"); 
-  show_text(" A, B");
+  Serial.println("Sr- Hola ");
+  Serial.println(n);
+  Serial.println("Contexto");
+  Serial.println("Problematica");
+  Serial.println("dialogo urtnk");
+  Serial.println("dialogo skt");
+  Serial.println("dialogo mf");
+  Serial.println("dialogo srr");  
+  Serial.println("Pregunta"); 
+  Serial.println(" A, B");
   int option = read_character();
   return option;    
 }
 
 int urtnk_route(String  n){
-  show_text("Urtnk- Hola ");
-  show_text(n);
-  show_text("Contexto");
-  show_text("Problematica");
-  show_text("dialogo urtnk");
-  show_text("dialogo skt");
-  show_text("dialogo mf");
-  show_text("dialogo srr");  
-  show_text("Pregunta"); 
-  show_text(" A, B");
+  Serial.println("Urtnk- Hola ");
+  Serial.println(n);
+  Serial.println("Contexto");
+  Serial.println("Problematica");
+  Serial.println("dialogo urtnk");
+  Serial.println("dialogo skt");
+  Serial.println("dialogo mf");
+  Serial.println("dialogo srr");  
+  Serial.println("Pregunta"); 
+  Serial.println(" A, B");
   int option = read_character();
   return option;    
 }
 
 int skt_route(String  n){
-  show_text("Skt- Hola ");
-  show_text(n);
-  show_text("Contexto");
-  show_text("Problematica");
-  show_text("dialogo urtnk");
-  show_text("dialogo skt");
-  show_text("dialogo mf");
-  show_text("dialogo srr");  
-  show_text("Pregunta"); 
-  show_text(" A, B");
+  Serial.println("Skt- Hola ");
+  Serial.println(n);
+  Serial.println("Contexto");
+  Serial.println("Problematica");
+  Serial.println("dialogo urtnk");
+  Serial.println("dialogo skt");
+  Serial.println("dialogo mf");
+  Serial.println("dialogo srr");  
+  Serial.println("Pregunta"); 
+  Serial.println(" A, B");
   int option = read_character();
   return option;      
 }
 
 void mfmf_gEnd(String  n){
-  show_text("G end Mafu");
+  Serial.println("G end Mafu");
 }
 
 void srr_gEnd(String  n){
-  show_text("G end Sora");
+  Serial.println("G end Sora");
 }
 
 void urtnk_gEnd(String  n){
-  show_text("G end Ura");
+  Serial.println("G end Ura");
 }
 
 void skt_gEnd(String  n){
-  show_text("G end Saka");  
+  Serial.println("G end Saka");  
 }
 
 void mfmf_bEnd(String  n){
-  show_text("B end Mafu");
+  Serial.println("B end Mafu");
 }
 
 void srr_bEnd(String  n){
-  show_text("B end Sora");
+  Serial.println("B end Sora");
 }
 
 void urtnk_bEnd(String  n){
-  show_text("B end Ura");
+  Serial.println("B end Ura");
 }
 
 void skt_bEnd(String  n){
-  show_text("B end Saka");  
+  Serial.println("B end Saka");  
 }

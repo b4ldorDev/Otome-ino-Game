@@ -1,5 +1,5 @@
 #include "otome_game.h"
-
+#include "music.h"
 int mfmf = 0;
 int srr = 0;
 int urtnk = 0 ; 

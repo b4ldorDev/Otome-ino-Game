@@ -18,6 +18,6 @@ String  read_name(){
   return nameu;
 }
 
-void show_text(String  t){
+/*void show_text(String  t){
    mybt.println(t);
-}
+}*/ 
